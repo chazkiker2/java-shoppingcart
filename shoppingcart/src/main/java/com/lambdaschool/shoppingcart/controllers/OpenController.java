@@ -8,7 +8,6 @@ import com.lambdaschool.shoppingcart.services.RoleService;
 import com.lambdaschool.shoppingcart.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,7 +28,7 @@ import java.util.List;
 import java.util.Set;
 
 
-@Transactional
+//@Transactional
 @RestController
 public class OpenController {
 
@@ -56,7 +55,7 @@ public class OpenController {
 	 *
 	 * @throws URISyntaxException we create some URIs during this method. If anything goes wrong with that creation, an exception is thrown.
 	 */
-	@Transactional
+	//	@Transactional
 	@PostMapping(value = "/createnewuser",
 	             consumes = "application/json",
 	             produces = "application/json")

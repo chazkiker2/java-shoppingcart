@@ -1,7 +1,6 @@
 package com.lambdaschool.shoppingcart.config;
 
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -38,14 +37,9 @@ public class AuthServerConfig
 
 	static final int ACCESS_TOKEN_VALIDITY_SECONDS = -1;
 
-	//	@Autowired
-	private final TokenStore tokenStore;
-
-	//	@Autowired
+	private final TokenStore            tokenStore;
 	private final AuthenticationManager authenticationManager;
-
-	//	@Autowired
-	private final PasswordEncoder encoder;
+	private final PasswordEncoder       encoder;
 
 	@Autowired
 	public AuthServerConfig(

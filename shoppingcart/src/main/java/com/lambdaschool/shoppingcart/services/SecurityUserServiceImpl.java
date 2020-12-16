@@ -9,9 +9,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-@Transactional
+
+//@Transactional
 @Service(value = "securityUserService")
 public class SecurityUserServiceImpl
 		implements UserDetailsService {
@@ -23,7 +23,7 @@ public class SecurityUserServiceImpl
 		this.userRepo = userRepo;
 	}
 
-	@Transactional
+	//	@Transactional
 	@Override
 	public UserDetails loadUserByUsername(String s)
 			throws
@@ -32,6 +32,7 @@ public class SecurityUserServiceImpl
 		if (user != null) {
 			throw new ResourceNotFoundException("Invalid username or password");
 		}
+		//		assert user != null;
 		return new org.springframework.security.core.userdetails.User(
 				user.getUsername(),
 				user.getPassword(),
