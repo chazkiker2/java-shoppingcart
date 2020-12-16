@@ -44,30 +44,30 @@ You are to start with the initial application provided. To find out the endpoint
 
 ### MVP
 
-* [ ] Add OAuth2 Security to the application
-  * [ ] Add the necessary dependencies
-  * [ ] Update User model as appropriate
-  * [ ] Add findByName to the User Service with associated repository entry
-  * [ ] Add the necessary helper functions
-  * [ ] Add the SecurityUserService service
-  * [ ] Add and update the necessary configuration files
+* [x] Add OAuth2 Security to the application
+  * [x] Add the necessary dependencies
+  * [x] Update User model as appropriate
+  * [x] Add findByName to the User Service with associated repository entry
+  * [x] Add the necessary helper functions
+  * [x] Add the SecurityUserService service
+  * [x] Add and update the necessary configuration files
 * [ ] The initial endpoints are affected by security as follows
-  * [ ] Only admins can access routes /roles/**
-  * [ ] Only admins can access routes /products/**
-  * [ ] Only admins can access routes
-    * [ ] POST /users/user
-    * [ ] DELETE /users/user/{id}
-    * [ ] PUT /users/user/{id}
-    * [ ] GET /users/user/name/{userName}
-    * [ ] GET /users/user/name/like/{userName}
-    * [ ] GET /users/user
-    * [ ] PATCH /users/user/{id}
-    * [ ] GET /users/user/{userId} 
+  * [x] Only admins can access routes /roles/**
+  * [x] Only admins can access routes /products/**
+  * [x] Only admins can access routes
+    * [x] POST /users/user
+    * [x] DELETE /users/user/{id}
+    * [x] PUT /users/user/{id}
+    * [x] GET /users/user/name/{userName}
+    * [x] GET /users/user/name/like/{userName}
+    * [x] GET /users/user
+    * [x] PATCH /users/user/{id}
+    * [x] GET /users/user/{userId} 
   * [ ] For the routes /carts/**
     * [ ] Remove the user/{userid} path variable from all the routes
     * [ ] Use the authenticated as the user to work with
 * [ ] Add new endpoints
-  * [ ] http://localhost:2019/users/myinfo
+  * [x] http://localhost:2019/users/myinfo
     * [ ] Any authenticated user can access this endpoint and it will return the authenticated users information
   * [ ] http://localhost:2019/logout
     * [ ] Allows a user to logout of the system by removing their access token from the token store
